@@ -1,0 +1,7 @@
+c:\users\naeem\documents\visual studio 2010\Projects\TCPClient01\TCPClient01\bin\Debug\TCPClient01.exe
+c:\users\naeem\documents\visual studio 2010\Projects\TCPClient01\TCPClient01\bin\Debug\TCPClient01.pdb
+c:\users\naeem\documents\visual studio 2010\Projects\TCPClient01\TCPClient01\obj\x86\Debug\TCPClient01.Form1.resources
+c:\users\naeem\documents\visual studio 2010\Projects\TCPClient01\TCPClient01\obj\x86\Debug\TCPClient01.Properties.Resources.resources
+c:\users\naeem\documents\visual studio 2010\Projects\TCPClient01\TCPClient01\obj\x86\Debug\TCPClient01.csproj.GenerateResource.Cache
+c:\users\naeem\documents\visual studio 2010\Projects\TCPClient01\TCPClient01\obj\x86\Debug\TCPClient01.exe
+c:\users\naeem\documents\visual studio 2010\Projects\TCPClient01\TCPClient01\obj\x86\Debug\TCPClient01.pdb

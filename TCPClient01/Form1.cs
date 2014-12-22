@@ -14,6 +14,7 @@ namespace TCPClient01
     public partial class Form1 : Form
     {
         TcpClient mTcpClient;
+        byte[] mRx;
 
         public Form1()
         {
@@ -57,12 +58,56 @@ namespace TCPClient01
             {
                 tcpc = (TcpClient)iar.AsyncState;
                 tcpc.EndConnect(iar);
+                mRx = new byte[512];
+                tcpc.GetStream().BeginRead(mRx, 0, mRx.Length, onCompleteReadFromServerStream, tcpc);
+
             }
             catch (Exception exc)
             {
                 MessageBox.Show(exc.Message);
             }
         }
+
+        void onCompleteReadFromServerStream(IAsyncResult iar)
+        {
+            TcpClient tcpc;
+            int nCountBytesReceivedFromServer;
+            string strReceived;
+
+            try
+            {
+                tcpc = (TcpClient)iar.AsyncState;
+                nCountBytesReceivedFromServer = tcpc.GetStream().EndRead(iar);
+
+                if (nCountBytesReceivedFromServer == 0)
+                {
+                    MessageBox.Show("Connection broken.");
+                    return;
+                }
+                strReceived = Encoding.ASCII.GetString(mRx, 0, nCountBytesReceivedFromServer);
+
+                printLine(strReceived);
+
+                mRx = new byte[512];
+                tcpc.GetStream().BeginRead(mRx, 0, mRx.Length, onCompleteReadFromServerStream, tcpc);
+
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show(exc.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public void printLine(string _strPrint)
+        {
+            tbConsole.Invoke(new Action<string>(doInvoke), _strPrint);
+        }
+
+        public void doInvoke(string _strPrint)
+        {
+            tbConsole.Text = _strPrint + Environment.NewLine + tbConsole.Text;
+        }
+
 
         private void tbSend_Click(object sender, EventArgs e)
         {

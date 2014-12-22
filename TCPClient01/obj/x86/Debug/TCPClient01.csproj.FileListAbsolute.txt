@@ -5,3 +5,4 @@ c:\users\naeem\documents\visual studio 2010\Projects\TCPClient01\TCPClient01\obj
 c:\users\naeem\documents\visual studio 2010\Projects\TCPClient01\TCPClient01\obj\x86\Debug\TCPClient01.csproj.GenerateResource.Cache
 c:\users\naeem\documents\visual studio 2010\Projects\TCPClient01\TCPClient01\obj\x86\Debug\TCPClient01.exe
 c:\users\naeem\documents\visual studio 2010\Projects\TCPClient01\TCPClient01\obj\x86\Debug\TCPClient01.pdb
+C:\Users\Naeem\Documents\Visual Studio 2010\Projects\TCPClient01\TCPClient01\obj\x86\Debug\TCPClient01.csprojResolveAssemblyReference.cache

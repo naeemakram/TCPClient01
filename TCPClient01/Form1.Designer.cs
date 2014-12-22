@@ -41,36 +41,36 @@
             // 
             // tbConsole
             // 
-            this.tbConsole.Location = new System.Drawing.Point(12, 12);
+            this.tbConsole.Location = new System.Drawing.Point(6, 12);
             this.tbConsole.Multiline = true;
             this.tbConsole.Name = "tbConsole";
-            this.tbConsole.Size = new System.Drawing.Size(795, 334);
+            this.tbConsole.Size = new System.Drawing.Size(651, 308);
             this.tbConsole.TabIndex = 0;
             // 
             // tbPayload
             // 
-            this.tbPayload.Location = new System.Drawing.Point(707, 352);
+            this.tbPayload.Location = new System.Drawing.Point(554, 326);
             this.tbPayload.Name = "tbPayload";
             this.tbPayload.Size = new System.Drawing.Size(100, 20);
             this.tbPayload.TabIndex = 1;
             // 
             // tbServerPort
             // 
-            this.tbServerPort.Location = new System.Drawing.Point(78, 378);
+            this.tbServerPort.Location = new System.Drawing.Point(69, 352);
             this.tbServerPort.Name = "tbServerPort";
             this.tbServerPort.Size = new System.Drawing.Size(100, 20);
             this.tbServerPort.TabIndex = 2;
             // 
             // tbServerIP
             // 
-            this.tbServerIP.Location = new System.Drawing.Point(78, 352);
+            this.tbServerIP.Location = new System.Drawing.Point(69, 326);
             this.tbServerIP.Name = "tbServerIP";
             this.tbServerIP.Size = new System.Drawing.Size(175, 20);
             this.tbServerIP.TabIndex = 3;
             // 
             // tbSend
             // 
-            this.tbSend.Location = new System.Drawing.Point(707, 375);
+            this.tbSend.Location = new System.Drawing.Point(554, 349);
             this.tbSend.Name = "tbSend";
             this.tbSend.Size = new System.Drawing.Size(100, 23);
             this.tbSend.TabIndex = 4;
@@ -80,7 +80,7 @@
             // 
             // btnConnect
             // 
-            this.btnConnect.Location = new System.Drawing.Point(183, 375);
+            this.btnConnect.Location = new System.Drawing.Point(174, 349);
             this.btnConnect.Name = "btnConnect";
             this.btnConnect.Size = new System.Drawing.Size(70, 23);
             this.btnConnect.TabIndex = 5;
@@ -91,7 +91,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 376);
+            this.label1.Location = new System.Drawing.Point(3, 350);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(60, 13);
             this.label1.TabIndex = 6;
@@ -100,7 +100,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 355);
+            this.label2.Location = new System.Drawing.Point(3, 329);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(51, 13);
             this.label2.TabIndex = 7;
@@ -109,7 +109,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(656, 355);
+            this.label3.Location = new System.Drawing.Point(503, 329);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(45, 13);
             this.label3.TabIndex = 8;
@@ -119,7 +119,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(819, 418);
+            this.ClientSize = new System.Drawing.Size(669, 380);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -129,8 +129,9 @@
             this.Controls.Add(this.tbServerPort);
             this.Controls.Add(this.tbPayload);
             this.Controls.Add(this.tbConsole);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "TCPClient 01";
             this.ResumeLayout(false);
             this.PerformLayout();
 
